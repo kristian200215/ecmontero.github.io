@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #202830;
+    margin: 0;
+}
+.nav-container {
+    position: sticky;
+    display: flex;
+    align-items: center;
+}
+.nav-links {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    list-style-type: none;
+    padding: 3% 0px 3%;
+    
+}
+.nav-links li a {
+    color: #62778c;
+    text-decoration: none;
+}
+.logo img {
+        max-width: 300px;
+        
+}
+/* NAVIGATION ANIMATION START */
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-links li a {
+    color: #62778c;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px; /* Adjust the underline thickness */
+}
+
+/* Add an underline pseudo-element */
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px; /* Adjust the underline height */
+    background-color: #0277bd; /* Adjust the underline color */
+    transition: width 0.3s ease; /* Animation duration and easing */
+}
+
+/* Animate the underline on hover */
+.nav-links li a:hover::after {
+    width: 100%;
+}
+/* NAVIGATION ANIMATION END */
+/* Start of the Header */
+.content-container {
+    max-width: 1536px;
+    margin: auto;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+}
+.header-left h1 {
+    color: #62778c;
+    font-size: 60px;
+    margin-bottom: 0px;
+}
+.header-left p {
+    margin-top: 0px;
+    color: #62778c;
+    font-size: 15px;
+}
+.header-right img {
+    position: relative;
+    right: 10%;
+    width: 500px;
+    height: 400px;
+}
+/* Btn style */
+button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #3d405b;
+    border: none;
+    color: #c2c0c0;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+   }
+   
+   button span {
+    background-color: #3d405b;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+   }
+   
+   button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+   }
+   
+   button:hover span {
+    padding-right: 15px;
+   }
+   
+   button:hover span:after {
+    opacity: 1;
+    right: 0;
+   }
+/* End of btn style */
+/* glitch style */
+.glitch {
+   position: relative;
+   font-size: 80px;
+   font-weight: 700;
+   line-height: 1.2;
+   color: #62778c;
+   letter-spacing: 5px;
+   z-index: 1;
+}
+
+.glitch:before,
+.glitch:after {
+   display: block;
+   content: attr(data-glitch);
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0.8;
+}
+
+.glitch:before {
+   animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+   color: #00ffff;
+   z-index: -1;
+}
+
+.glitch:after {
+   animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+   color: #ff00ff;
+   z-index: -2;
+}
+/* Skill CSS START */
+.feature-container {
+    max-width: 1536px;
+    margin: auto;
+    font-size: 30px;
+    padding-top: 10%;
+}
+.skills-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.skill-img img {
+    width: 400px;
+    height: 400px;
+}
+.skill-img {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+.feature-container h2 {
+    color: #495b6d;
+}
+.skill-img p {
+    max-width: 600px;
+    font-size: 20px;
+    color: #495b6d;
+    margin-top: 0;
+    
+}
+.para-icon{
+    color:  #495b6d;
+}
+
+.vertical-line {
+    border: none;
+    border-left: 2px solid #495b6d; 
+    height: 400px;
+}
+.skill-info h3 {
+    color: #495b6d;
+    text-decoration: underline;
+}
+.skill-info .icon {
+    display: flex;
+    gap: 10px;
+ }
+.skill-info i {
+    color: #acaeb1;
+    background-color: #374553;
+    border-radius: 10%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Skill CSS END */
+/* START OF THE PROJECT CSS */
+.project-container {
+    max-width: 1536px;
+    margin: auto;
+    padding-top: 10%;
+}
+.project-container h1 {
+    color: #495b6d;
+    font-size: 35px;
+    text-align: center;
+}
+.project-line {
+    border: none;
+    border-left: 2px solid #495b6d; 
+    height: 400px;
+    margin: auto 0;
+}
+.project-content h3 {
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+.project-content p {
+    margin-top: 0;
+}
+.face-recognition,
+.hrmo {
+    color: #495b6d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.face-recognition p {
+    max-width: 400px;
+    float: right;
+}
+.hrmo h3 {
+    max-width: 400px;
+    text-align: right;
+}
+.hrmo p {
+    max-width: 400px;
+    text-align: right;
+}
+.face-recognition img {
+    max-width: 400px;
+    height: 200px;
+}
+.hrmo img {
+    max-width: 400px;
+    height: 350px;
+}
+
+/* END OF THE PROJECT CSS */
+/* START OF JOURNEY */
+.about-container {
+    max-width: 1536px;
+    margin: auto;
+    padding-top: 10%; 
+}
+.about-container h1 {
+    margin: 0;
+    font-size: 40px;
+    color: #495b6d;
+}
+.about-content {
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15%;
+}
+.about-content img { 
+    padding: 20px;
+    max-width: 500px;
+    height: 500px;
+}
+.about-content .bio {
+    max-width: 700px;
+}
+.about-content .bio p, h2 {
+    color: #d8d9da;
+    margin: 0;
+}
+.about-content h2 {
+    font-size: 30px;
+}
+.about-content p {
+    font-size: 20px;
+}
+/* END OF JOURNEY */
+/* START FOOTER */
+footer {
+    max-width: 1536px;
+    margin: auto;
+}
+.footer{
+    max-width: 100%;
+    padding:100px 0px 0px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    .footer .row{
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+/* END FOOTER */
+
+@keyframes glitch-color {
+   0% {
+      transform: translate(0);
+   }
+
+   20% {
+      transform: translate(-3px, 3px);
+   }
+
+   40% {
+      transform: translate(-3px, -3px);
+   }
+
+   60% {
+      transform: translate(3px, 3px);
+   }
+
+   80% {
+      transform: translate(3px, -3px);
+   }
+
+   to {
+      transform: translate(0);
+   }
+}
+/* gltch style end */
+@media (max-width: 1536px) {
+    .nav-container {
+        max-width: 1280px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .nav-container {
+        max-width: 1024px;
+
+    }
+    .content-container {
+        max-width: 1024px;
+        margin: auto;
+    }
+    .content {
+        flex-direction: column-reverse;
+
+    }
+    .header-left h1 {
+        text-align: center;
+    }
+    .header-left p {
+        text-align: center;
+    }
+    .content a{
+        position: relative;
+        left: 80px
+    }
+    .header-right img {
+        position: relative;
+        left: 3%;
+    }
+    
+    
+}
+@media (max-width: 1024px) {
+    .nav-container {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        max-width: 640px;
+    }
+}
+
+@media (max-width: 640px) {
+    .nav-container {
+        max-width: 475px;
+    }
+}
+
+@media (max-width: 475px) {
+    .nav-container {
+        max-width: 100%;
+    }
+}
