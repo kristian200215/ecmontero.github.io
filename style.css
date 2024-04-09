@@ -388,58 +388,152 @@ footer {
     .nav-container {
         max-width: 1280px;
     }
+    .feature-container {
+        max-width: 1280px;
+    }
+    .about-container {
+        max-width: 1280px;
+    }
 }
 
 @media (max-width: 1280px) {
     .nav-container {
         max-width: 1024px;
-
     }
-    .content-container {
+    .feature-container {
         max-width: 1024px;
-        margin: auto;
     }
-    .content {
-        flex-direction: column-reverse;
-
+    .about-container {
+        max-width: 1024px;
     }
-    .header-left h1 {
-        text-align: center;
-    }
-    .header-left p {
-        text-align: center;
-    }
-    .content a{
-        position: relative;
-        left: 80px
-    }
-    .header-right img {
-        position: relative;
-        left: 3%;
-    }
-    
-    
 }
 @media (max-width: 1024px) {
     .nav-container {
         max-width: 768px;
+        justify-content: center;
     }
+    .content-container {
+        max-width: 768px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .header-left {
+        text-align: center;
+    }
+    .header-right img {
+        margin-left: 100px;
+    }
+    .feature-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .skills-container {
+        flex-direction: column;
+    }
+    .skill-info {
+        margin: auto;
+        text-align: center;
+    }
+    .skill-info h3 {
+        margin-bottom: 20px;
+    }
+    .skills-container hr {
+        display: none; 
+    }
+    .skill-img {
+        padding: 20px;
+    }
+    .about-content {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-container h1 {
+        text-align: center;
+    }
+    footer .row {
+        padding: 0;
+    }
+
 }
 
 @media (max-width: 768px) {
     .nav-container {
         max-width: 640px;
     }
-}
-
-@media (max-width: 640px) {
-    .nav-container {
-        max-width: 475px;
+    .face-recognition {
+        padding: 20px;
+    }
+    .hrmo {
+        padding: 20px;
     }
 }
 
-@media (max-width: 475px) {
+@media (max-width: 640px) { 
+    .nav-container {
+        max-width:  100%;
+        text-align: center;
+    }
+    .nav-links {
+       margin: auto;
+       margin: 20px;
+       
+    }
+    .header-right img {
+       margin-left: 10%;
+    }
+    .logo img {
+        display: none;
+    }
+    .skill-img {
+        flex-direction: column;
+    }
+    .about-container p {
+        padding: 20px;
+        text-align: left;
+    }
+    footer .row ul {
+        padding: 0;
+        gap: 1;
+    }
+
+}
+
+@media (max-width: 605px) {
     .nav-container {
         max-width: 100%;
+    }
+    .header-right img {
+        width: 300px;
+        height: 250px;
+     }
+    .header-left h1 {
+        font-size: 20px;
+    }
+    .face-recognition {
+        flex-direction: column;
+    }
+    .face-recognition hr {
+        display: none; 
+    }
+    .hrmo{
+        flex-direction: column-reverse;
+    }
+    .hrmo hr{
+        display: none;
+    }
+    .hrmo h3 {
+        text-align: left;
+    }
+    .hrmo p {
+        text-align: left;
+    }
+    .about-content img {
+        width: 300px;
+        height: 300px;
     }
 }
