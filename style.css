@@ -167,7 +167,7 @@ button {
 }
 /* Skill CSS START */
 .feature-container {
-    width: 1536px;
+    max-width: 1536px;
     margin: auto;
     font-size: 30px;
     padding-top: 10%;
